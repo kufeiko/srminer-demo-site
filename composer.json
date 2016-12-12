@@ -1,17 +1,22 @@
 {
-    "name": "cnect/srminer",
+    "name": "cnect/srminer-demo-site",
     "description": "Dig for information in SRM",
     "type": "project",
     "require": {
         "composer/installers": "~1.0",
         "drupal/drupal": "^7.53",
         "phing/phing": "~2.10",
-        "drupal/views": "^3.14"
+        "drupal/views": "^3.14",
+        "cnect/srminer": "dev-master"
     },
     "repositories": {
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/7"
+        },
+        "cnect/srminer": {
+            "type": "vcs",
+            "url": "https://github.com/kufeiko/srminer"
         }
     },
     "extra": {
