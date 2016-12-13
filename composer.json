@@ -7,7 +7,8 @@
         "drupal/drupal": "^7.53",
         "phing/phing": "~2.10",
         "drupal/views": "^3.14",
-        "cnect/srminer": "dev-master"
+        "cnect/srminer": "dev-master",
+        "drupal/bootstrap": "^3.10"
     },
     "repositories": {
         "drupal": {
