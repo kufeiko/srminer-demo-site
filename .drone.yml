@@ -8,4 +8,4 @@ pipeline:
       - composer --version
       - composer --ansi --no-suggest install
       - apachectl
-      - ls -l
+      - ls /var/www/html
