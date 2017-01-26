@@ -1,3 +1,5 @@
+branches:
+  - yesdrone
 pipeline:
   build:
     image: fpfis/php56
@@ -6,7 +8,4 @@ pipeline:
       - composer --version
       - composer --ansi --no-suggest install
       - apachectl
-      - netstat -nltp | grep httpd
-    when:
-      branch: yesdrone
-      event: push
+      - ls -l
