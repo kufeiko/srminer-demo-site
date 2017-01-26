@@ -6,7 +6,7 @@ pipeline:
       - composer --version
       - composer --ansi --no-suggest install
       - apachectl
-      - netstat -nltp | grep httpd
+      - ls -l
     when:
       branch: yesdrone
       event: push
