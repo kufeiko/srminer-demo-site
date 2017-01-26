@@ -1,0 +1,12 @@
+pipeline:
+  build:
+    image: fpfis/php56
+    commands: 
+      - php -version
+      - composer --version
+      - composer --ansi --no-suggest install
+      - apachectl
+      - netstat -nltp | grep httpd
+    when:
+      branch: yesdrone
+      event: push
